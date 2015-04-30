@@ -13,6 +13,7 @@
     "browserify": "^9.0.8",
     "gulp": "^3.8.11",
     "gulp-babel": "^5.1.0",
+    "gulp-gh-pages": "^0.5.1",
     "vinyl-source-stream": "^1.1.0"
   }
 }
