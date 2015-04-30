@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Babel ToDo</title>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			color: #111;
+			background-color: #7AC9ED;
+			font-family: 'Open Sans';
+			font-size: 16px;
+		}
+
+		h1 {
+			font-size: 50px;
+			background-color: rgba(35, 31, 32, 1);
+			color: #fff;
+			padding: 10px;
+		}
+
+		#app {
+			padding: 20px;
+		}
+
+		.container {
+			width: 500px;
+			margin: 50px auto;
+			box-shadow: 0 5px 9px rgba(0,0,0,0.3);
+			background-color: #fff;
+		}
+
+		input[type="text"], button {
+			padding: 5px;
+			font-size: 16px;
+			font-family: 'Open Sans';
+		}
+
+		ul, li {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul {
+			margin: 1em 0;
+		}
+
+		li {
+			padding: 10px 0;
+			border-bottom: 1px solid #ddd;
+		}
+
+		li:hover {
+			background-color: #efefef;
+		}
+
+		li.is-completed {
+			color: #ccc;
+			text-decoration: line-through;
+		}
+
+		.item-delete {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Babel ToDo</h1>		
+		<div id="app">			
+			<input type="text" placeholder="ToDo" id="todo-input">
+			<button data-action="addItem">Add</button>
+			<button data-action="clearCompletedItems">Clear completed</button>
+			<ul id="todo-list"></ul>
+		</div>
+	</div>
+
+	<script src="dist/main-built.js"></script>
+</body>
+</html>
